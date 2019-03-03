@@ -1,24 +1,24 @@
-###Computer Architecture
+Computer Architecture
 
-#What is a/an:
+What is a/an:
 	register: 
 	bus: a collection of wire that connect components together, transfer data around the pc
 	USB: universal serial bus, 
 	frame buffer:
 	intterupt:
 
-#Risc v Cisc - advantages and disadvantages.
+Risc v Cisc - advantages and disadvantages.
 
-#main memory 
+main memory 
 	-made up of cells, cells contain physical addresses
 	-each address has 8 bits(1byte) in binary(1 or 0)
 	-so there are 2 to the power of 8 different combinations
 	-main memory is volatile
 
-#Parallel systems -  hard for a programmer to exploit.
+Parallel systems -  hard for a programmer to exploit.
 
-#Computer Performance
-	
+Computer Performance
+
 	-measure performance
 
 		-how long it takes to finish an instruction.
