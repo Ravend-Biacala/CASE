@@ -1,5 +1,5 @@
 
-4 components of a computer system
+#4 components of a computer system
 	-user, application programs, operating system, hardware
 
 An OS is a program that acts as an intermediary between a user of a computer and the computer hardware
