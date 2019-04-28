@@ -1,6 +1,5 @@
-### Testing
+#### Testing
 
     Q1. what is testing?
-    
-   * hello there
+        - Testing is a controlled exercise which involves an object under test, definition of the environment, definition of the inputs and definition of the expected outputs.
 
