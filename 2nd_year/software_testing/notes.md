@@ -65,11 +65,22 @@ possible exceptional cases where your opinion might be changed.
  * Structure based White-box (Clear Box Testing, Open Box Testing, Glass Box Testing, Transparent Box Testing, Code-Based Testing or Structural Testing)
    * internal structure/design/implementation of the item being tested is known to the tester
    * Deriving test cases directly from the code written (or design) to implement a system. Information about how the software is constructed is used to derive test cases. The extent of coverage of the software can be measured for existing test cases, and further test cases can be derived systematically to increase coverage.
+   
+Q4. in your own words, describe the practice of equivalence class partitioning, making use of an example as appropriate.
+
+Q5. In your opinion, should both boundary value analysis and equivalence class partitioning be adopted when designing test data and test cases? Justify your response with clear reasoning
+   
 * Equivalence partitioning (considered representative of the complete partition)
    * is based on dividing a set of test conditions into groups that can be considered the same, that is, the system will treat them equivalently.
    * Equivalence partitioning is the process of methodically reducing the large (or perhaps infinite) set of possible test cases into a small, but equally effective, set of test cases.
 
 <p align="center"><img src="images/Equivalence_Partitioning.JPG" width="400"></p>
+   
+Q6. Employing the use of an example, outline the meaning of boundary value analysis in the context of software testing.
+
+
+
+
    
  <h3 align="center"> Test Planning </h3>
 
