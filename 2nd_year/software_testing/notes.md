@@ -1,7 +1,7 @@
 #testing
 
 1. what is testing?
-<li>testing is a controlled exercise which involves an object under test, definition of the envirionment, definition of the inputs and definition of the expected outputs</li>
+testing is a controlled exercise which involves an object under test, definition of the envirionment, definition of the inputs and definition of the expected outputs
 
 
 
