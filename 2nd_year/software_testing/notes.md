@@ -5,4 +5,4 @@ Q1. what is testing?
     
 Q2, Making use of a diagram, outline a typical software system decomposition, clearly indicating where different types of software testing are undertaken.
 
-   <div style="text-align:center"><img src="images/File_002.png" width="500"></div>
+   <p align="center"><img src="images/File_002.png" width="500"></p>
