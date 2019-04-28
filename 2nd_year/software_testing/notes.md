@@ -5,4 +5,4 @@
     
     Q2. Making use of a diagram, outline a typical software system decomposition, clearly indicating where different types of software testing are undertaken.
 
-    <img src="images/File_002.png" width="300">
+   <img src="images/File_002.png" width="300">
