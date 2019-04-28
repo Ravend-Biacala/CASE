@@ -33,5 +33,16 @@ possible exceptional cases where your opinion might be changed.
  * technique which determines whether our test cases are actually covering the application code and how much code is exercised when we run those test cases
     * statement coverage - every statement executed at least once.
         * Statement Coverage = (statements executed / total statements) * 100
+    * Branch coverage - every outcome of every decision executed at least once
+        * Branch Coverage = (branch outcomes executed / total branch outcomes) * 100
+    * path coverage - concerned with testing all possible outcomes from all possible statements / decisions and in all possible combinations.
+        * Path Coverage = (paths executed / total number of paths) * 100
+    * Structural coverage - 100% coverage of transfers of control or data between components in scope
+    * Functional coverage - 100% equivalence partitions for all message and function call parameters (valid and invalid values)
  
+ #### Test Design Tecniques
  
+ Q1. Using examples, clearly highlight the difference between black box and white box testing.
+ 
+ * black box
+   * Deriving test cases directly from a specification or model of a system/proposed system. Models, either formal or informal, are used for the specification of the problem to be solved, the software or its components. Test cases can then be derived systematically.
