@@ -1,4 +1,4 @@
-#### Testing
+ <h3 align="center"> Testing </h3>
 
 Q1. what is testing?
 * Testing is a controlled exercise which involves an object under test, definition of the environment, definition of the inputs and definition of the expected outputs.
@@ -8,10 +8,12 @@ Q2. Making use of a diagram, outline a typical software system decomposition, cl
 
    <p align="center"><img src="images/File_002.png" width="500"></p>
 
-#### Exit Criteria
+ <h3 align="center"> Exit Criteria </h3>
 
 Q1. In the context of software testing, explain the meaning of exit criteria including a clear explanation of the need for establishing exit criteria.
+
 Q2. In your own words, explain what is meant by the term "exit criteria" in the context of software testing, providing three distinct examples of exit criteria.
+
 Q3. In your opinion, is it advisable to release software without having set and satisfied
 specific test exit criteria? Discuss your opinion, presenting clear rationale and any
 possible exceptional cases where your opinion might be changed.
@@ -24,7 +26,7 @@ possible exceptional cases where your opinion might be changed.
     * Residual risks, such as defects not fixed or lack of test coverage in certain areas
     * Schedules such as those based on time to market
  
- #### Coverage
+ <h4 align="center"> Coverage </h4>
  
  Q1. Discuss the concept of coverage as relevant to software testing and describe four different types of coverage.
  
@@ -40,10 +42,16 @@ possible exceptional cases where your opinion might be changed.
     * Structural coverage - 100% coverage of transfers of control or data between components in scope
     * Functional coverage - 100% equivalence partitions for all message and function call parameters (valid and invalid values)
  
- #### Test Design Tecniques
+ <h3 align="center"> Paths </h3>
+ 
+   <p align="center"><img src="images/paths.JPG" width="600"></p>
+   
+ <h3 align="center"> Test Design Techniques </h3>
  
  Q1. Using examples, clearly highlight the difference between black box and white box testing.
+ 
  Q2. In your opinion, might black box and white box testing have been given more explanatory names???? I dunno
+ 
  Q3. When conducting dynamic testing, both “black box” and “white box” techniques can be adopted. Briefly explain the difference between black box and white box techniques.
  
  * Specification based Black-Box 
@@ -51,7 +59,7 @@ possible exceptional cases where your opinion might be changed.
  * Structure based White-box
    * Deriving test cases directly from the code written (or design) to implement a system. Information about how the software is constructed is used to derive test cases. The extent of coverage of the software can be measured for existing test cases, and further test cases can be derived systematically to increase coverage.
    
-#### Test Planning
+ <h3 align="center"> Test Planning </h3>
 
 Q1. In test planning, a contingency is sometimes incorporated. Explain what is meant by the term contingency and offer your opinion as to its necessity.
 
@@ -59,8 +67,8 @@ Q1. In test planning, a contingency is sometimes incorporated. Explain what is m
    * no contingency is risk based testing.
    * You never have complete information, so estimation is imprecise and prone to error, so yes it is needed
    * Additional testing of a plan or projection to determine the extent to which it can absorb unexpected or unforeseen delays, disasters, or losses without failing.
-   
-#### Data Flow Analysis and Control Flow Graphs
+
+ <h3 align="center"> Data Flow Analysis and Control Flow Graphs </h3>
 
 Q1. In your own words, provide a description for data flow analysis and program control flow analysis, and discuss the commonalities and differences that exist in these two approaches.
 
