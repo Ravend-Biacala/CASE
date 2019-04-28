@@ -3,6 +3,10 @@
 Q1. what is testing?
 * Testing is a controlled exercise which involves an object under test, definition of the environment, definition of the inputs and definition of the expected outputs.
     * the systematic exploration of component system with the main aim finding and reporting defects.
+* Static Testing
+    * Testing without executing the program - “potential” faults, that is, problems that could lead to faults when the program is modified
+* Dynamic Testing
+    * Testing by executing the program with real inputs - Includes various techniques but requires the coding stage to be completed.
     
 Q2. Making use of a diagram, outline a typical software system decomposition, clearly indicating where different types of software testing are undertaken.
 
@@ -26,7 +30,7 @@ possible exceptional cases where your opinion might be changed.
     * Residual risks, such as defects not fixed or lack of test coverage in certain areas
     * Schedules such as those based on time to market
  
- <h4 align="center"> Coverage </h4>
+ <h3 align="center"> Coverage </h3>
  
  Q1. Discuss the concept of coverage as relevant to software testing and describe four different types of coverage.
  
@@ -47,17 +51,25 @@ possible exceptional cases where your opinion might be changed.
    <p align="center"><img src="images/paths.JPG" width="600"></p>
    
  <h3 align="center"> Test Design Techniques </h3>
+ * Purpose of test design techniques is to identify test conditions and test cases.
  
- Q1. Using examples, clearly highlight the difference between black box and white box testing.
+ Q1. Using examples, clearly highlight the difference between black box and white box testing?
  
- Q2. In your opinion, might black box and white box testing have been given more explanatory names???? I dunno
+ Q2. In your opinion, might black box and white box testing have been given more explanatory names???? I dunno, yes
  
  Q3. When conducting dynamic testing, both “black box” and “white box” techniques can be adopted. Briefly explain the difference between black box and white box techniques.
  
- * Specification based Black-Box 
+ * Specification based Black-Box (Behavioral Testing)
    * Deriving test cases directly from a specification or model of a system/proposed system. Models, either formal or informal, are used for the specification of the problem to be solved, the software or its components. Test cases can then be derived systematically.
- * Structure based White-box
+   * internal structure/design/implementation of the item being tested is not known to the tester
+ * Structure based White-box (Clear Box Testing, Open Box Testing, Glass Box Testing, Transparent Box Testing, Code-Based Testing or Structural Testing)
+   * internal structure/design/implementation of the item being tested is known to the tester
    * Deriving test cases directly from the code written (or design) to implement a system. Information about how the software is constructed is used to derive test cases. The extent of coverage of the software can be measured for existing test cases, and further test cases can be derived systematically to increase coverage.
+* Equivalence partitioning (considered representative of the complete partition)
+   * is based on dividing a set of test conditions into groups that can be considered the same, that is, the system will treat them equivalently.
+   * Equivalence partitioning is the process of methodically reducing the large (or perhaps infinite) set of possible test cases into a small, but equally effective, set of test cases.
+
+<p align="center"><img src="images/Equivalence_Partitioning.JPG" width="400"></p>
    
  <h3 align="center"> Test Planning </h3>
 
@@ -72,8 +84,10 @@ Q1. In test planning, a contingency is sometimes incorporated. Explain what is m
 
 Q1. In your own words, provide a description for data flow analysis and program control flow analysis, and discuss the commonalities and differences that exist in these two approaches.
 
-* data flow analysis - Concerned with how data is used on the different paths through the code. there are 3 types.
+* Data Flow Analysis - Concerned with how data is used on the different paths through the code. there are 3 types.
    * Undefined (u) The data has no defined value. 
    * Defined (d) The data is assigned a value.
    * Referenced (r) The data is used.
-* Program control flow. Each branch is shown as a separate path and loops are shown by arrows looping back to the loop condition node The control flowgraph is a graphical representation of a program’s control structure. 
+* Program control flow. Each branch is shown as a separate path and loops are shown by arrows looping back to the loop condition node The control flowgraph is a graphical representation of a program’s control structure.
+   * control flow or flow of control is the order function calls, instructions, and statements are executed or evaluated when a program is running.
+   * static-code-analysis technique for determining the control flow of a program
