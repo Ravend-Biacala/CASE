@@ -43,6 +43,29 @@ possible exceptional cases where your opinion might be changed.
  #### Test Design Tecniques
  
  Q1. Using examples, clearly highlight the difference between black box and white box testing.
+ Q2. In your opinion, might black box and white box testing have been given more explanatory names???? I dunno
+ Q3. When conducting dynamic testing, both “black box” and “white box” techniques can be adopted. Briefly explain the difference between black box and white box techniques.
  
- * black box
+ * Specification based Black-Box 
    * Deriving test cases directly from a specification or model of a system/proposed system. Models, either formal or informal, are used for the specification of the problem to be solved, the software or its components. Test cases can then be derived systematically.
+ * Structure based White-box
+   * Deriving test cases directly from the code written (or design) to implement a system. Information about how the software is constructed is used to derive test cases. The extent of coverage of the software can be measured for existing test cases, and further test cases can be derived systematically to increase coverage.
+   
+#### Test Planning
+
+Q1. In test planning, a contingency is sometimes incorporated. Explain what is meant by the term contingency and offer your opinion as to its necessity.
+
+* Contingency accounts for potential under-estimation
+   * no contingency is risk based testing.
+   * You never have complete information, so estimation is imprecise and prone to error, so yes it is needed
+   * Additional testing of a plan or projection to determine the extent to which it can absorb unexpected or unforeseen delays, disasters, or losses without failing.
+   
+#### Data Flow Analysis and Control Flow Graphs
+
+Q1. In your own words, provide a description for data flow analysis and program control flow analysis, and discuss the commonalities and differences that exist in these two approaches.
+
+* data flow analysis - Concerned with how data is used on the different paths through the code. there are 3 types.
+   * Undefined (u) The data has no defined value. 
+   * Defined (d) The data is assigned a value.
+   * Referenced (r) The data is used.
+* Program control flow. Each branch is shown as a separate path and loops are shown by arrows looping back to the loop condition node The control flowgraph is a graphical representation of a program’s control structure. 
