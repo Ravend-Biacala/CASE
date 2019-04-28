@@ -1,4 +1,5 @@
  <h3 align="center"> Testing </h3>
+* Debugging and testing are different Testing can show failures that are caused by defects
 
 Q1. what is testing?
 * Testing is a controlled exercise which involves an object under test, definition of the environment, definition of the inputs and definition of the expected outputs.
@@ -68,20 +69,31 @@ possible exceptional cases where your opinion might be changed.
    
 Q4. in your own words, describe the practice of equivalence class partitioning, making use of an example as appropriate.
 
+ *
 Q5. In your opinion, should both boundary value analysis and equivalence class partitioning be adopted when designing test data and test cases? Justify your response with clear reasoning
    
 * Equivalence partitioning (considered representative of the complete partition)
    * is based on dividing a set of test conditions into groups that can be considered the same, that is, the system will treat them equivalently.
    * Equivalence partitioning is the process of methodically reducing the large (or perhaps infinite) set of possible test cases into a small, but equally effective, set of test cases.
 
-<p align="center"><img src="images/Equivalence_Partitioning.JPG" width="400"></p>
+<p align="center">
+ <img src="images/Equivalence_Partitioning.JPG" width="250">
+ <img src="images/test_equi_strat.JPG" width="250">
+ <img src="images/equi_class_part.JPG" width="250">
+</p>
    
 Q6. Employing the use of an example, outline the meaning of boundary value analysis in the context of software testing.
 
+Q7. In your opinion, is a technique such as boundary value analysis critical to everyday software testing? Clearly justify your opinion with two distinct reasons.
 
+* Experience shows more faults at boundaries of equivalence partitions where partitions are continuous.
+   * So test cases just above, just below and on the boundary tend to find faults Don't forget test cases for output partitions: just above, on, just below boundaries
+   * 1)identify the boundary value 2)select test values: just above and below 3)three values per boundary
+* why its important.
+   * BV subsumes EP where the partitions are ranges of values
+   * If you have covered all boundary values you automatically get EP coverage
+   * You might have chosen different EP values, but since all values in a partition ARE equivalent any test value – even extreme ones - will do it.
 
-
-   
  <h3 align="center"> Test Planning </h3>
 
 Q1. In test planning, a contingency is sometimes incorporated. Explain what is meant by the term contingency and offer your opinion as to its necessity.
@@ -102,3 +114,28 @@ Q1. In your own words, provide a description for data flow analysis and program 
 * Program control flow. Each branch is shown as a separate path and loops are shown by arrows looping back to the loop condition node The control flowgraph is a graphical representation of a program’s control structure.
    * control flow or flow of control is the order function calls, instructions, and statements are executed or evaluated when a program is running.
    * static-code-analysis technique for determining the control flow of a program
+
+ <h3 align="center"> Unit Testing </h3>
+ 
+* Debugging is the programmer activity that identifies the cause of a defect, repairs the code and checks that the defect has been fixed correctly
+* debugging is not testing, it is a tool used by developers to investigate suspected defects. Debuggers are tools used by developers to investigate this particular type of defect.
+* The debugger is a program that enables developers to step through their code one line at a time in the same order that they are executed.
+
+Q1. Clearly outline the role of a debugger, describing 6 distinct features that are supported in the IDLE debugger.
+* Go - Executes the rest of the code as normal, or until it reaches a break point (we discuss break points later.)
+* Step - Step one instruction. If the line contains a function call, the debugger will step into the function.
+* Over - Step one instruction. If the line is a function call, the debugger won’t step into the function, but instead step over the call.
+* Out - Keeps stepping over lines of code until the debugger leaves the function it was in when Out was clicked. This steps out of the function.
+* Quit - Immediately terminates the program.
+* breakpoint - prevents stepping through unecessary code. if we know which area the problem is ocurring, we can ignore all problems leading up to the problem area through the use of breakpoints.
+
+Q2. In your opinion, should unit testing be implemented by all industry-based programmers and for all code? Justify your response with clear reasoning.
+
+Q3. In your own words, describe PyUnit including an explanation of why it is important for software testing.
+
+
+
+ <h3 align="center"> Defect Severity & Priority </h3>
+ 
+ 
+
