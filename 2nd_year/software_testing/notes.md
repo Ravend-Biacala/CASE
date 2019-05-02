@@ -3,7 +3,7 @@
 * Debugging and testing are different Testing can show failures that are caused by defects
 * A failure is: a deviation of the software from its expected delivery or service (“problem”, “incident” or “issue”)
 * A defect is: A manifestation of human error in software
-* An error is: A human action producing an incorrect result When programmers make errors they introduce faults to program code
+* An error is: A human action producing an incorrect result. When programmers make errors they introduce faults to program code
 
 Q1. what is testing?
 * Testing is a controlled exercise which involves an object under test, definition of the environment, definition of the inputs and definition of the expected outputs.
