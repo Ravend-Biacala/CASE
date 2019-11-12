@@ -1,8 +1,11 @@
 -- 1) The Day of the Week
 
+data tree = 
+    hello | hi 
+    deriving (Enum,Show)
 
 data Day =
-    Monday | Tuesday | Wednesday | Thursday | Friday | Saturday | Sunday
+    Sunday | Monday | Tuesday | Wednesday | Thursday | Friday | Saturday
     deriving (Enum,Show)
 
 data Month =
@@ -26,7 +29,7 @@ leap a
     | otherwise = False
 
 
--- part B ------------------------------------------
+-- part B ---------------------------------------------------------------------------
 -- Now we need to deal with the numbers of days in each month.
 
 mLengths :: Int -> [Int]
@@ -50,7 +53,6 @@ mLengths a
 --     daysLeading (year - 1752)
 
 
-
 daysLeading :: Int -> Int
 daysLeading 1752 = 0
 daysLeading a
@@ -62,19 +64,43 @@ numDays (day, month, year)
     | year == 1752 = day + sum (take (fromEnum month) (mLengths year))
     | otherwise = day + sum (take (fromEnum month) (mLengths year)) + daysLeading (year-1)
 
-
+-- numDays :: (Int, Month, Int) -> Int
+-- numDays (_,_,1752) = 0
+-- numDays (day, month, year) = 
+--     day + sum( take (index) (mLengths year)) + numDays (31, Dec, year -1)
+--     where index = fromEnum month
 
 -- part D
 
 dayOfWeek :: Date -> Day
-dayOfWeek d = toEnum (((numDays d)-1) `mod` 7)
+dayOfWeek d = toEnum (((numDays d - 1)) `mod` 7)
 
 
+-- question 2  Monkey Puzzle Sort--------------------------------------------------------------------------
 
 
+data Tree a = Null | Node a (Tree a) (Tree a)
+     deriving (Read,Show)
+
+addNode :: Ord a => a -> Tree a -> Tree a
+addNode m Null = Node m Null Null
+addNode m (Node n t1 t2)
+   | m<n       = Node n (addNode m t1) t2
+   | otherwise = Node n t1 (addNode m t2)
 
 
+makeTree :: Ord a => [a] -> Tree a
+makeTree []     = Null
+makeTree (x:xs) = addNode x (makeTree xs)
 
+
+inOrder :: Tree a -> [a]
+inOrder Null           = []
+inOrder (Node n t1 t2) = (inOrder t1) ++ [n] ++ (inOrder t2)
+
+
+mpSort :: Ord a => [a] -> [a]
+mpSort = inOrder . makeTree
 
 
 
